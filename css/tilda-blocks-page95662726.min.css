@@ -461,29 +461,25 @@ img:not([src]) {
   font-style: normal;
 }
 
-/* REMOVE the duplicate - use ONLY this one */
 @font-face {
-  font-family: "3shrift";
-  src: url("../fonts/dance_partner_0.woff2") format("woff2"),
-    url("../fonts/dance_partner_0.woff") format("woff");
-  font-weight: 100;
+  font-family: "Arti Regular";
+  src: url("../fonts/Arti Regular.otf") format("opentype");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-/* Add this mobile-specific override */
+/* Tilda mobile override */
 @media screen and (max-width: 767px) {
-  body,
-  .t-text,
-  .tn-atom,
-  .t396__elem,
-  [class*="text"],
-  [class*="title"] {
-    font-family: "3shrift", Arial, sans-serif !important;
-    font-weight: 100 !important;
+  .t-mobile body,
+  .t-mobile .t-text,
+  .t-mobile .tn-atom,
+  .t-mobile .t-input,
+  .t-mobile [data-field="text"],
+  .t-mobile [data-field="title"] {
+    font-family: "Arti Regular", Arial, sans-serif !important;
+    font-weight: normal !important;
     line-height: 1 !important;
-    -webkit-font-smoothing: antialiased !important;
-    text-rendering: optimizeLegibility !important;
   }
 }
 
