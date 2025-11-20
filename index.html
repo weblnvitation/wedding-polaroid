@@ -26,9 +26,9 @@
     <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-popup-1.1.min.css" type="text/css" media="all" />
   </noscript>
   <link rel="stylesheet" href="css/tilda-forms-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';">
-  <link rel="stylesheet"
-    href="https://fonts.google.com/specimen/Comforter+Brush?preview.text=&preview.text_type=custom&category=Handwriting&subset=cyrillic"
-    type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="preload" href="../fonts/dance_partner_0.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="../fonts/dance_partner_0.woff2" as="font" type="font/woff2" crossorigin>
   <script nomodule="" src="js/tilda-polyfill-1.0.min.js" charset="utf-8"></script>
   <script
     type="text/javascript">function t_onReady(func) { if (document.readyState != 'loading') { func(); } else { document.addEventListener('DOMContentLoaded', func); } }
@@ -52,6 +52,7 @@
         document.addEventListener('DOMContentLoaded', t_setvisRecs);
       }
     })();</script>
+
 </head>
 
 <body class="t-body" style="margin:0;"> <!--allrecords-->
@@ -582,7 +583,7 @@
           font-size: 14px;
           font-family: '3shrift', Arial, sans-serif;
           line-height: 1;
-          font-weight: 200;
+          font-weight: 100;
           background-position: center center;
           border-color: transparent;
           border-style: solid;
@@ -649,7 +650,7 @@
           font-size: 34px;
           font-family: '3shrift', Arial, sans-serif;
           line-height: 1;
-          font-weight: 200;
+          font-weight: 100;
           background-position: center center;
           border-color: transparent;
           border-style: solid;
@@ -1499,7 +1500,7 @@
             display: table;
             top: 124px;
             left: calc(50% - 160px + 186px);
-            width: 40px;
+            width: 120px;
             height: auto;
           }
         }
@@ -1525,43 +1526,34 @@
           object-position: center center;
         }
 
-        @media screen and (max-width:1199px) {
-          #rec1568961721 .tn-elem[data-elem-id="176331821263842010"] {
-            display: table;
-            top: 55px;
-            left: calc(50% - 480px + 411px);
-            width: 139px;
-            height: auto;
-          }
-        }
+     /* Mobile-first approach (even better) */
+@media screen and (max-width: 479px) {
+  #rec1568961721 .tn-elem[data-elem-id="176331821263842010"] {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 85vw !important;
+    max-width: 340px !important;
+    height: auto !important;
+    margin: 10px auto !important;
+    display: block !important;
+  }
+}
 
-        @media screen and (max-width:959px) {
-          #rec1568961721 .tn-elem[data-elem-id="176331821263842010"] {
-            display: table;
-            top: 55px;
-            left: calc(50% - 320px + 251px);
-            width: 139px;
-            height: auto;
-          }
-        }
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  #rec1568961721 .tn-elem[data-elem-id="176331821263842010"] {
+    position: relative !important;
+    width: 300px !important;
+    margin: 15px auto !important;
+  }
+}
 
-        @media screen and (max-width:639px) {
-          #rec1568961721 .tn-elem[data-elem-id="176331821263842010"] {
-            display: table;
-            left: calc(50% - 240px + 171px);
-            height: auto;
-          }
-        }
-
-        @media screen and (max-width:479px) {
-          #rec1568961721 .tn-elem[data-elem-id="176331821263842010"] {
-            display: table;
-            top: 51px;
-            left: calc(50% - 160px + 85px);
-            width: 151px;
-            height: auto;
-          }
-        }
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  #rec1568961721 .tn-elem[data-elem-id="176331821263842010"] {
+    width: 250px !important;
+    margin: 20px auto !important;
+  }
+}
 
         #rec1568961721 .tn-elem[data-elem-id="1742140177862"] {
           color: #000000;
@@ -1653,7 +1645,7 @@
          
           <div class="t396__elem tn-elem tn-elem__1568961721176331821263842010 t-animate"
             data-elem-id="176331821263842010" data-elem-type="image" data-field-top-value="0"
-            data-field-left-value="431" data-field-height-value="200" data-field-width-value="300"
+            data-field-left-value="380" data-field-height-value="400" data-field-width-value="400"
             data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
             data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px"
             data-field-widthunits-value="px" data-animate-style="fadein" data-animate-duration="3"
@@ -2437,7 +2429,7 @@
         #rec1568747441 .tn-elem[data-elem-id="1719817709220"] .tn-atom {
           vertical-align: middle;
           color: #000000;
-          font-size: 15px;
+          font-size: 12px;
           font-family: 'sourcecodepro', Arial, sans-serif;
           line-height: 1.55;
           font-weight: 200;
@@ -2482,7 +2474,7 @@
           }
 
           #rec1568747441 .tn-elem[data-elem-id="1719817709220"] .tn-atom {
-            font-size: 25px;
+            font-size: 12px;
             letter-spacing: -0.5px;
             background-size: cover;
           }
@@ -3723,7 +3715,7 @@
         #rec1568747461 .tn-elem[data-elem-id="1742141118557"] .tn-atom {
           vertical-align: middle;
           color: #000000;
-          font-size: 40px;
+          font-size: 28px;
           font-family: '3shrift', Arial, sans-serif;
           line-height: 1;
           font-weight: 100;
@@ -3766,7 +3758,7 @@
           }
 
           #rec1568747461 .tn-elem[data-elem-id="1742141118557"] .tn-atom {
-            font-size: 36px;
+            font-size: 26px;
             background-size: cover;
           }
         }
@@ -8168,7 +8160,7 @@
         #rec1574039831 .tn-elem[data-elem-id="1742142735097"] .tn-atom {
           vertical-align: middle;
           color: #000000;
-          font-size: 36px;
+          font-size: 28px;
           font-family: '3shrift', Arial, sans-serif;
           line-height: 1;
           font-weight: 100;
@@ -8211,7 +8203,7 @@
           }
 
           #rec1574039831 .tn-elem[data-elem-id="1742142735097"] .tn-atom {
-            font-size: 36px;
+            font-size: 26px;
             background-size: cover;
           }
         }
