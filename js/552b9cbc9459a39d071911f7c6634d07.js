@@ -6,7 +6,7 @@
     <div id="timer${_id}" style="
       display: flex;
       gap: 20px;
-      margin-left: 40px;
+      margin-left: 50px;
       font-family: 'Poiret One';
       color: #000;
       text-align: center;
