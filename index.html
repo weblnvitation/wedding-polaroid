@@ -1499,7 +1499,7 @@
           #rec1568961721 .tn-elem[data-elem-id="176331821263541320"] {
             display: table;
             top: 124px;
-            left: calc(50% - 160px + 186px);
+            left: calc(50% - 160px + 166px);
             width: 120px;
             height: auto;
           }
@@ -1508,7 +1508,7 @@
         #rec1568961721 .tn-elem[data-elem-id="176331821263842010"] {
           z-index: 3;
           top: 55px;
-          left: calc(50% - 600px + 531px);
+          left: calc(50% - 600px + 501px);
           width: 139px;
           height: auto;
         }
@@ -1532,10 +1532,10 @@
     position: relative !important;
     top: 0 !important;
     left: 0 !important;
-    width: 85vw !important;
-    max-width: 340px !important;
+    width: calc(85vw - 10px) !important; /* Subtract the right margin */
+    max-width: 310px !important; /* 340px - 10px */
     height: auto !important;
-    margin: 10px auto !important;
+    margin: 10px auto 10px calc(50% - (85vw / 2) + 5px) !important;
     display: block !important;
   }
 }
