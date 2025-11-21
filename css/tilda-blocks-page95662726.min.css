@@ -467,8 +467,8 @@ img:not([src]) {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0308, U+0530-058F, U+FB13-FB17; /* Armenian unicode range */
 }
-
 /* Tilda mobile override */
 @media screen and (max-width: 767px) {
   .t-mobile body,
