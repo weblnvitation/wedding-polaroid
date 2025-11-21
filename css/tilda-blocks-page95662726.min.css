@@ -461,44 +461,6 @@ img:not([src]) {
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Arti Regular";
-  src: url("../fonts/Arti Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+0308, U+0530-058F, U+FB13-FB17; /* Armenian unicode range */
-}
-/* Tilda mobile override */
-@media screen and (max-width: 767px) {
-  .t-mobile body,
-  .t-mobile .t-text,
-  .t-mobile .tn-atom,
-  .t-mobile .t-input,
-  .t-mobile [data-field="text"],
-  .t-mobile [data-field="title"] {
-    font-family: "Arti Regular", Arial, sans-serif !important;
-    font-weight: normal !important;
-    line-height: 1 !important;
-  }
-}
-
-/* FORCE the font on mobile with high specificity */
-@media screen and (max-width: 767px) {
-  body,
-  body *,
-  .t-text,
-  .tn-atom,
-  .t396__elem,
-  [class*="text"],
-  [class*="title"],
-  [class*="heading"] {
-    font-family: "3shrift", Arial, sans-serif !important;
-    font-weight: 100 !important;
-    line-height: 1 !important;
-  }
-}
-
 /* Alternative: Target specific elements in your platform */
 @media screen and (max-width: 767px) {
   #rec1568961721 .t-text,
@@ -513,7 +475,7 @@ img:not([src]) {
 @font-face {
   font-family: "3shrift";
   src: url("../fonts/CormorantInfant-Medi.woff") format("woff");
-  font-weight: 800;
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
